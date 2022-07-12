@@ -32,7 +32,6 @@
 /* Feel free to tweak the following
  * config settingsto your own liking. */
 
-
  :root {
     
     /*---+---+---+---+---+---+---+
@@ -41,11 +40,11 @@
 
     /* Comment the color theme you don't want to use */
 
-    /* Dark Theme Colors */
+    /* Dark Theme Colors 
     --window-colour:               #1f2122;
     --secondary-colour:            #141616;
     --inverted-colour:             #FAFAFC;
-
+    */
     /* Light Theme Colors
     --window-colour:               #FAFAFC;
     --secondary-colour:            #EAEAEC;
@@ -92,6 +91,24 @@
     /* adds left and right margin to the container-tabs indicator */
     --container-tabs-indicator-margin: 0px;
 
+}
+
+@media (prefers-color-scheme: dark) {
+		:root {
+				/* Dark Theme Colors */
+				--window-colour:               #1f2122;
+				--secondary-colour:            #141616;
+				--inverted-colour:             #FAFAFC;
+		}
+}
+
+@media (prefers-color-scheme: light) {
+		:root {
+    /* Light Theme Colors */
+    --window-colour:               #FAFAFC;
+    --secondary-colour:            #EAEAEC;
+    --inverted-colour:             #1E2021;
+		}
 }
 
     /*---+---+---+---+---+---+---+
